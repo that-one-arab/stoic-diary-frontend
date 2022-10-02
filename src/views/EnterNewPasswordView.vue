@@ -11,6 +11,7 @@
                 label="Enter your new password"
                 required
                 @keyup.enter="handleSubmit"
+                type="password"
               ></v-text-field>
             </v-col>
             <v-col cols="12" md="12" lg="12">
@@ -20,6 +21,7 @@
                 label="Confirm your new password"
                 required
                 @keyup.enter="handleSubmit"
+                type="password"
               ></v-text-field>
             </v-col>
             <v-col sm="12">
