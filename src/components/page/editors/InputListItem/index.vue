@@ -86,6 +86,7 @@ export default {
           http
             .post(SUGGESTIONS_AUTOCOMPLETE_URL, {
               autocompleteString: this.value,
+              sectionName: this.sectionName,
             })
             .then((data) => {
               const suggestions = data.details;
