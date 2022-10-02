@@ -111,12 +111,12 @@ export default {
       if (!data.success) {
         if (
           data.errors.includes(
-            'Login failed, please check your username and/or password'
+            'Login failed, please check your email and/or password'
           )
         ) {
           this.$store.commit('showSnackbar', {
             header: 'Cannot login',
-            body: 'Login failed, please check your username and/or password',
+            body: 'Login failed, please check your username or email field and/or password field',
             variant: 'error',
           });
         } else {
