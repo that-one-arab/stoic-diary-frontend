@@ -143,7 +143,7 @@ export default {
           // Hover the next suggestion (below the current one)
           const nextIndex = hoveredSuggestionIndex + 1;
           // Make sure the newIndex is between the length of the suggestions array
-          if (this.suggestions.length - 1 > nextIndex) {
+          if (this.suggestions.length > nextIndex) {
             this.hoverSuggestion(nextIndex, hoveredSuggestionIndex);
 
             // Check if the newly hovered suggestion is visible
