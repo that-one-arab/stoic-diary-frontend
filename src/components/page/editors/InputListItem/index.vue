@@ -74,6 +74,12 @@ export default {
     handleInput($event) {
       this.$emit('input', $event.target.value);
 
+      // Do not send autocomplete request if the field is empty (EG: user removes what they typed) and close the suggestions bar if open
+      if ($event.target.value.trim() === '') {
+        this.handleCloseSuggestionsDropdown();
+        return;
+      }
+
       // Clear the timeout if it exists (to prevent the function from running when user is still typing)
       if (this.timeout) {
         clearTimeout(this.timeout);
