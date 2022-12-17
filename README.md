@@ -1,3 +1,5 @@
+Backend is [here](https://github.com/that-one-arab/stoic-diary-backend)
+
 # stoic-diary-frontend
 
 ## Project setup
